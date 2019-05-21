@@ -68,10 +68,10 @@ When analysing the article title to get the list of relevant concepts and topics
 Where
 *	`$TALK_TISANE_KEYWORD_FEATURES` is the value of the `TALK_TISANE_KEYWORD_FEATURES` configuration setting
 *	`$TALK_TISANE_STOP_HYPERNYMS` is the value of the `TALK_TISANE_STOP_HYPERNYMS` configuration setting
-The response will contain an attribute containing an array of integers to be used when analysing comments. The name of the attribute is relevant. (For example, `"relevant": [12345,67890,23469]`.)
+The response will contain an attribute containing an array of integers to be used when analysing comments. The name of the attribute is `relevant`. (For example, `"relevant": [12345,67890,23469]`.)
 
 ## Root Comments
-When analysing comments which are not responses to another comment, the `$DEPENDS_ON_SITUATION` portion of the settings is the relevant attribute returned by the article title analysis. For example, `"relevant": [12345,67890,23469]`.
+When analysing comments which are not responses to another comment, the `$DEPENDS_ON_SITUATION` portion of the settings is the `relevant` attribute returned by the article title analysis. For example, `"relevant": [12345,67890,23469]`.
 
 ## Response Comments
 When analysing comments which respond to other comments, the `$DEPENDS_ON_SITUATION` portion of the settings is empty. Note that the comma before it must be removed, otherwise, the JSON is not valid. 
